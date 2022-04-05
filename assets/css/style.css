@@ -20,7 +20,6 @@ main{
     box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
     -webkit-box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
     -moz-box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
-
 }
 
 .textGenerator{
@@ -43,6 +42,7 @@ main{
     display: flex;
     justify-content: center;
     margin: -16.5rem auto;
+    /* background-color: red; */
 }
 
 .clickGenerator{
@@ -62,4 +62,58 @@ main{
     color: white;
     background-color: #5655aa;
     border: 1px solid white;
+}
+
+@media (max-width: 1024px){
+    .divClickGenerator{
+        margin: -16rem auto;
+    }
+    
+    .clickGenerator{
+        width: 15vw;
+    }
+}
+
+@media (max-width: 768px){
+    .divClickGenerator{
+        margin: -16rem auto;
+    }
+    
+    .clickGenerator{
+        width: 15vw;
+        height: 5vh;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 425px){
+    main{
+        background-color: #5655aa;
+        margin: 5rem auto;
+        width: 15rem;
+        height: 30vh;
+        border: 0;
+        border-radius: 10px;
+        padding: 3rem;
+        box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
+        -webkit-box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
+        -moz-box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
+    }
+
+    .textGenerator{
+        font-size: 1.45rem;
+        text-align: center;
+        margin-top: 0rem;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .divClickGenerator{
+        margin: -6rem auto;
+    }
+    
+    .clickGenerator{
+        width: 25vw;
+        height: 5vh;
+        border-radius: 5px;
+    }
 }
