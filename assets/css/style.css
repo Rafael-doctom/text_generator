@@ -4,35 +4,62 @@
 }
 
 body{
-    background: gray;
+    background: #444444;
     width: 100%;
     height: 100%;
 }
 
 main{
-    background-color: red;
+    background-color: #5655aa;
     margin: 15rem auto;
-    width: 30vw;
+    width: 35rem;
     height: 30vh;
     border: 0;
     border-radius: 10px;
-    padding: 1rem;
-    -webkit-box-shadow: 6px 5px 15px 4px #FFFFFF; 
-box-shadow: 6px 5px 15px 4px #FFFFFF;
+    padding: 3rem;
+    box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
+    -webkit-box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 1px 3px 41px 1px rgba(255,255,255,1);
+
 }
 
 .textGenerator{
-    width: 25vw;
-    font-size: 2rem;
+    font-size: 1.45rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.textGenerator::before{
+    content: '“';
+}
+
+.textGenerator:after{
+    content: '”';
+}
+
+.divClickGenerator{
+    display: flex;
+    justify-content: center;
+    margin: -16.5rem auto;
 }
 
 .clickGenerator{
-    text-align: center;
-    width: 30vw;
+    width: 10vw;
     border: 0;
+    border-radius:10px;
     height: 4vh;
     background-color: greenyellow;
     cursor: pointer;
-    margin:  10rem 0;
-    position: absolute;
+    height: 4.5vh;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.clickGenerator:hover{
+    color: white;
+    background-color: #5655aa;
+    border: 1px solid white;
 }

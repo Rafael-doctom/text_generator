@@ -8,12 +8,14 @@ const generator = () => {
             response => response.json()
         )
         .then(data => {
+            console.log(data.slip)
+
             result.innerHTML = `
                 <p class="textGenerator">${data.slip.advice}</p>
             `
 
-
         })
+
 }
 
 generator()
