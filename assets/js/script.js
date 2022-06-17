@@ -1,8 +1,9 @@
 let result = document.getElementById("result");
 
-let URL = "https://api.adviceslip.com/advice";
-
 const generator = async () => {
+
+    let URL = `https://api.adviceslip.com/advice/${Math.floor(Math.random() * 130)}`
+
     const dados = await fetch(URL)
         .then(
             response => response.json()
@@ -11,12 +12,12 @@ const generator = async () => {
             console.log(data.slip)
             result.innerHTML = `
                 <p class="textGenerator">${data.slip.advice}</p>
-                <p class="textGenerator">${data.slip.id }</p>
+                <p class="textGenerator">${data.slip.id}</p>
             `
         })
         .catch(() => {
             result.innerHTML = `
-                <p class="textGenerator">erro</p>
+            <p class="textGenerator">${data.slip.advice}</p>
             `
         });
 
